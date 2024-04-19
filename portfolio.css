@@ -57,9 +57,13 @@ h1,h2,h3,h4 {
 .wrapper {
   background-color: #1B1E25;
   width: 100%;
-  max-width: 1440px;
   margin: 0 auto;
   padding-top: 1.5rem;
+}
+
+main {
+  width: 100%;
+  margin-inline: auto;
 }
 
 nav {
@@ -551,7 +555,7 @@ align-self: flex-start;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  margin-top: 128px;
+  margin-top: 8rem;
 }
 
 .content-container {
@@ -570,7 +574,7 @@ align-self: flex-start;
   justify-content: space-between;
   gap: 4rem;
   margin: 0 auto;
-  padding: 60px 86px 60px 85px;
+  padding: 5% 7.26%;
   border-radius: 8px 0px 0px 0px;
 
 }
@@ -805,12 +809,13 @@ align-self: flex-start;
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .more-about-me-content,
   .skill-section,
   .recent-work-first-row1,
   .recent-work-third-row,
-  .hero-section {
+  .hero-section,
+  .row2 {
     flex-wrap: wrap;
   }
 
@@ -843,8 +848,16 @@ align-self: flex-start;
   }
 
   main {
-    padding: 2rem;
+    padding: 1rem;;
   }
+
+  .apps {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
 }
 
 

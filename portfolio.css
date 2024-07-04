@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 html {
   scroll-behavior: smooth;
 }
@@ -65,6 +64,7 @@ h1,h2,h3,h4 {
 main {
   width: 100%;
   margin-inline: auto;
+  max-width: 1184px;
 }
 
 nav {
@@ -249,7 +249,6 @@ a {
   align-items: center;
   gap: 72px;
   width: 100%;
-  max-width: 1089px;
   margin: 0 auto;
   color: #CCE4D3;
   font-family: "Inter", sans-serif;
@@ -574,7 +573,6 @@ align-self: flex-start;
   flex-direction: column;
   justify-content: space-between;
   gap: 4rem;
-  margin: 0 auto;
   padding: 5% 7.26%;
   border-radius: 8px 0px 0px 0px;
 
@@ -602,8 +600,8 @@ align-self: flex-start;
 .logo {
   max-width: 88px;
   max-height: 88px;
-  width: 88px;
-  height: 88px;
+  /* width: 88px;
+  height: 88px; */
   display: flex;
   background-color: #2C3446;
   display: flex;
@@ -615,6 +613,8 @@ align-self: flex-start;
 .logo img {
   max-width: 44px;
   max-height: 44px;
+  /* width: 50%;
+  height: 50%; */
 }
 
 .v-divider {
@@ -862,7 +862,6 @@ align-self: flex-start;
 }
 
 
-=======
 html {
   scroll-behavior: smooth;
 }
@@ -1433,9 +1432,10 @@ align-self: flex-start;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   gap: 4rem;
   margin: 0 auto;
-  padding: 60px 86px 60px 85px;
+  /* padding: 60px 86px 60px 85px; */
   border-radius: 8px 0px 0px 0px;
 
 }
@@ -1598,8 +1598,9 @@ align-self: flex-start;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding-top: 128px;
-  padding-bottom: 128px;
+  /* padding-top: 128px;
+  padding-bottom: 128px; */
+  padding: 128px 1rem;
 }
 
 .end-section-left-section {
@@ -1675,8 +1676,22 @@ align-self: flex-start;
   .skill-section,
   .recent-work-first-row1,
   .recent-work-third-row,
-  .hero-section {
+  .hero-section,
+  .end-section,
+  .end-section-right-section,
+  .apps {
     flex-wrap: wrap;
+  }
+
+  .end-section-right-section,
+  .apps {
+    flex-direction: row;
+    margin: 1rem;
+    align-items: center;
+  }
+
+  .apps-row {
+    gap: .6rem;
   }
 
   .recent-work-section-row1-column1,
@@ -1686,7 +1701,8 @@ align-self: flex-start;
   .left-skill-section,
   .right-skill-section,
   .hero__image-section,
-  .more-about-me-text1 {
+  .more-about-me-text1,
+  .people-said-left {
     width: 100%;
     margin: 0 auto;
     margin-top: 2rem;
@@ -1712,5 +1728,11 @@ align-self: flex-start;
   }
 }
 
+@media  (max-width: 600px) {
+  .people-said-left p {
+    font-size: 1rem;
+    line-height: normal;
+  }
+}
 
->>>>>>> ee58b28c0ef51d6661abd5080e04630e0b59097a
+

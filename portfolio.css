@@ -12,9 +12,14 @@ aside {
   position: fixed;
   top: 0;
   translate: -100%;
-  width: 40%;
+  width: 50vw;
   height: 100vh;
   z-index: 100;
+  overflow: hidden;
+}
+
+.sidebar ul {
+  padding: 0;
 }
 
 .close {
